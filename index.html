@@ -6,12 +6,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Trouvez le mot proche</h1>
+    <h1>CémanPix</h1>
+    <h2>Trouve le mot le plus proche</h2>
+    <p>Attention, ceci est la V1 du jeu <br> Les mots sont forcements en rapport avec la catégorie <br> mais il est possible de trouver un autre mot similaire <br> plus vous avez de lettre ressemblante au mot final plus le pourcentage augmente <br> <strong>ceci sera fixe a la v2 </strong> </p>
     <select id="category-select">
-        <option value="Informatique">Informatique</option>
+        <option value="Technologie">Technologie</option>
         <option value="Nature">Nature</option>
-        <option value="Histoire">Histoire</option>
+        <option value="Science">Science</option>
+        <option value="Littérature">Littérature</option>
+        <option value="Musique">Musique</option>
+        <option value="Géographie">Géographie</option>
+        <option value="Cuisine">Cuisine</option>
+        <option value="Sport">Sport</option>
     </select>
+    
     <input type="text" id="user-input" placeholder="Entrez votre mot ici">
     <button onclick="calculateProximity()">Vérifier la proximité</button>
     <ul id="results"></ul>

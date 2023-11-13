@@ -1,9 +1,13 @@
 body {
+    background-color: black;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
 }
 
+h1, h2, p {
+    color: white;
+}
 #user-input, #category-select {
     margin: 10px;
     padding: 5px;

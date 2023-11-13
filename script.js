@@ -27,21 +27,16 @@ function calculateProximity() {
     displayResult(userInput, proximityScore);
 }
 
-
 const targetWords = {
-    "Informatique": "ordinateur",
-    "Nature": "arbre",
-    "Histoire": "roi"
+    "Technologie": "ordinateur",
+    "Nature": "forêt",
+    "Science": "chimie",
+    "Littérature": "roman",
+    "Musique": "mélodie",
+    "Géographie": "montagne",
+    "Cuisine": "recette",
+    "Sport": "football"
 };
-
-function calculateProximity() {
-    const category = document.getElementById('category-select').value;
-    const targetWord = targetWords[category];
-    const userInput = document.getElementById('user-input').value.toLowerCase();
-
-    let proximityScore = calculateScore(userInput, targetWord);
-    displayResult(userInput, proximityScore);
-}
 
 function calculateScore(input, target) {
     let commonChars = 0;
