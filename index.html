@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Proximité des Mots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trouvez le mot proche</h1>
+    <select id="category-select">
+        <option value="Informatique">Informatique</option>
+        <option value="Nature">Nature</option>
+        <option value="Histoire">Histoire</option>
+    </select>
+    <input type="text" id="user-input" placeholder="Entrez votre mot ici">
+    <button onclick="calculateProximity()">Vérifier la proximité</button>
+    <ul id="results"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
